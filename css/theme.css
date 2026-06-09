@@ -73,3 +73,25 @@
       rgba(0, 0, 0, 0) 100%);
   }
 }
+
+/* ---- Footer: light duck-egg ground with dark text (per client) ---- */
+.footer {
+  background-color: #92b8b3;
+  color: #2a2a2a;
+}
+.footer__inner { border-bottom-color: rgba(42, 42, 42, 0.2); }
+.footer__brand-name,
+.footer__heading { color: #2a2a2a; }
+.footer__brand-text { color: rgba(42, 42, 42, 0.82); }
+.footer__link,
+.footer__contact-item,
+.footer__contact-item a { color: rgba(42, 42, 42, 0.82); }
+.footer__link:hover,
+.footer__contact-item a:hover { color: #2a2a2a; }
+.footer__contact-item svg { color: var(--color-secondary-dark); }
+.footer__copyright,
+.footer__legal a { color: rgba(42, 42, 42, 0.68); }
+.footer__legal a:hover { color: #2a2a2a; }
+
+/* Fox mark beside the brand wordmark in the nav */
+.nav__logo { max-height: 46px; width: auto; }
