@@ -1,0 +1,75 @@
+/* =============================================
+   THEME: Be Bold Coaching
+   Calm, elegant — integrative therapy & coaching
+   Palette: duck-egg teal + deep teal + rose gold (from brand logo)
+   Font Pairing: Classic Elegance (Cormorant Garamond + DM Sans)
+   ============================================= */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+/* --- Theme Variables --- */
+:root {
+  /* Colour Palette — pulled from the brand logo:
+     deep teal wordmark + duck-egg / Tiffany ground + rose-gold line art */
+  --color-primary: #14756C;          /* deep Tiffany teal */
+  --color-primary-light: #3FA79C;
+  --color-primary-dark: #0C4F49;
+
+  --color-secondary: #C68A6E;        /* rose gold — brand accent */
+  --color-secondary-light: #E2B6A0;
+  --color-secondary-dark: #A2664D;   /* deeper rose-gold for eyebrows/labels */
+
+  --color-accent: #2BA298;           /* brighter Tiffany pop */
+  --color-accent-light: #6FC2B8;
+
+  --color-bg: #F4FAF8;
+  --color-bg-alt: #DCEFEB;           /* duck-egg / Tiffany tint (more present) */
+  --color-bg-dark: #0E423D;          /* deep teal */
+  --color-surface: #FFFFFF;
+  --color-surface-alt: #E9F6F2;
+
+  --color-text: #293735;
+  --color-text-light: #566B67;
+  --color-text-inverse: #F4FAF8;
+  --color-text-heading: #103E39;     /* deep teal headings */
+
+  --color-border: #C6E0DA;
+  --color-border-light: #DEEDE9;
+
+  --color-success: #1F8E80;
+  --color-error: #C45B5B;
+
+  /* Duck-egg glass for the transparent homepage nav over the image hero */
+  --nav-transparent-bg: #91b8b599;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Cormorant is a delicate serif — nudge heading sizes up for presence */
+  --text-h1-desktop: 3.25rem;
+  --text-h2-desktop: 2.5rem;
+  --text-h3-desktop: 1.875rem;
+}
+
+/* Keep the transparent (homepage) nav text legible over the brighter right
+   side of the hero, now that the header colour is a lighter duck-egg glass. */
+.nav--transparent .nav__name,
+.nav--transparent .nav__title,
+.nav--transparent .nav__link {
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.38);
+}
+
+/* Homepage image-left hero: darken the LEFT (behind the text) and let the RIGHT
+   (Karlina's photo) stay bright and vibrant. Horizontal fade, desktop only —
+   on mobile the text spans full width, so keep the default even overlay. */
+@media (min-width: 768px) {
+  .hero--image-left::before {
+    background: linear-gradient(90deg,
+      rgba(0, 0, 0, 0.62) 0%,
+      rgba(0, 0, 0, 0.5) 38%,
+      rgba(0, 0, 0, 0.22) 64%,
+      rgba(0, 0, 0, 0) 100%);
+  }
+}
