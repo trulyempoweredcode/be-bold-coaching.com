@@ -150,6 +150,10 @@ h1 em, h2 em, h3 em, .hero__heading em {
 .footer__copyright,
 .footer__legal a { color: rgba(42, 42, 42, 0.68); }
 .footer__legal a:hover { color: #2a2a2a; }
+/* Social icons tuned for the light teal footer (default .footer__social is built for dark footers) */
+.footer__social { margin-top: var(--space-md); }
+.footer__social a { background: rgba(42, 42, 42, 0.06); color: #2a2a2a; }
+.footer__social a:hover { background: var(--color-primary); color: #fff; }
 
 /* Fox mark beside the brand wordmark in the nav */
 .nav__logo { max-height: 46px; width: auto; }
@@ -293,6 +297,14 @@ h1 em, h2 em, h3 em, .hero__heading em {
 /* Dark-section legibility: lighten subtitle + emphasis */
 .section--dark .section-subtitle { color: rgba(255, 255, 255, 0.75); }
 .section--dark h2 em, .section--dark h3 em { color: var(--color-brass-light); }
+
+/* Six-Month Container band: teal-green so it pops (distinct from the pine trust strip + terracotta courage band) */
+.section--six-month { background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%); color: var(--color-text-inverse); }
+.section--six-month h2 { color: var(--color-text-inverse); }
+.section--six-month h2 em { color: var(--color-brass-light); }
+.section--six-month .section-label { color: var(--color-brass-light); }
+.section--six-month .section-subtitle { color: rgba(255, 255, 255, 0.9); }
+.section--six-month .fox-watermark { opacity: 0.10; filter: none; }
 
 /* Guard: full-bleed sections (split--bleed) + off-canvas mobile nav must never
    cause a horizontal scrollbar. overflow-x: clip doesn't create a scroll
