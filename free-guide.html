@@ -36,6 +36,26 @@
 <!-- BEACON -->
 <script>(function(){try{var u="https:\/\/editmy.site\/api\/hit\/11";var d=JSON.stringify({p:location.pathname,r:document.referrer});if(navigator.sendBeacon){navigator.sendBeacon(u,d);}else{fetch(u,{method:"POST",keepalive:true,body:d});}}catch(e){}})();</script>
 <!-- /BEACON -->
+
+  <!-- Sender.net universal embed (renders Sender signup forms + fires automations) -->
+  <script>
+    (function (s, e, n, d, er) {
+      s['Sender'] = er;
+      s[er] = s[er] || function () {
+        (s[er].q = s[er].q || []).push(arguments)
+      }, s[er].l = 1 * new Date();
+      s[er].on = function(event, callback) {
+        s[er].listeners = s[er].listeners || {};
+        (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+      };
+      var a = e.createElement(n),
+          m = e.getElementsByTagName(n)[0];
+      a.async = 1;
+      a.src = d;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+    sender('59a781a3e14879')
+  </script>
 </head>
 <body>
 
@@ -154,15 +174,20 @@
             <p>Pop in your first name and email and I&rsquo;ll send the guide straight to your inbox. Over the following days, I&rsquo;ll also share a few gentle reflections and tools I often share with clients &mdash; no pressure, no hard sell, and you can unsubscribe any time.</p>
 
             <!-- ============================================================
-                 NEWSLETTER / LEAD-MAGNET EMBED
-                 Paste your email-platform opt-in form embed code (First name +
-                 Email) between the markers below. On signup, configure your
-                 platform to deliver the guide PDF (hosted at /free-guide.pdf).
+                 LEAD-MAGNET EMBED  (Sender.net) - LIVE
+                 The Sender universal script is installed in this page's
+                 <head>; the form <div> below renders from it (collects
+                 First name + Email). Form id: azpJJZ. Deliver the guide PDF
+                 from the Sender welcome automation (upload the PDF into
+                 Sender, or link https://www.be-bold-coaching.com/free-guide.pdf).
+                 Turn ON double opt-in for UK GDPR.
                  ============================================================ -->
             <!-- NEWSLETTER_EMBED:start -->
-            <div class="newsletter-embed-placeholder alert alert--info" style="text-align:left; margin-top: var(--space-lg);">
-              <p><strong>Opt-in form goes here.</strong> Paste your email-platform embed code (collecting <em>First name</em> and <em>Email address</em>) between the <code>NEWSLETTER_EMBED</code> markers in this section. Set the platform to email the guide automatically on signup. The guide PDF is deployed at <code>/free-guide.pdf</code> for your platform to link to.</p>
-            </div>
+            <style>
+              /* Centre the Sender form and drop its default card shadow so it sits flush in the box */
+              .sender-form-field iframe { box-shadow: none !important; }
+            </style>
+            <div style="text-align: center" class="sender-form-field" data-sender-form-id="azpJJZ"></div>
             <!-- NEWSLETTER_EMBED:end -->
 
             <p style="margin-top: var(--space-lg);">By signing up you agree to receive the guide and occasional supportive emails. See our <a href="privacy.html">privacy policy</a>. You can unsubscribe at any time.</p>
