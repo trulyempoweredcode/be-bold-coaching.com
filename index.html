@@ -81,6 +81,13 @@
 <!-- BEACON -->
 <script>(function(){try{var u="https:\/\/editmy.site\/api\/hit\/11";var d=JSON.stringify({p:location.pathname,r:document.referrer});if(navigator.sendBeacon){navigator.sendBeacon(u,d);}else{fetch(u,{method:"POST",keepalive:true,body:d});}}catch(e){}})();</script>
 <!-- /BEACON -->
+
+  <!-- Mobile hero crop: keep Karlina's face in view (right side) on narrow screens -->
+  <style>
+    @media (max-width: 767px) {
+      .hero--image { background-position: 70% 25% !important; }
+    }
+  </style>
 </head>
 <body>
 
@@ -167,7 +174,11 @@
           <ul class="hero__ticks">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              BACP-registered &amp; ICF-accredited coaching qualification
+              BACP-registered member
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              ICF-accredited coaching qualification
             </li>
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
