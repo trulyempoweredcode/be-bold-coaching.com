@@ -36,6 +36,26 @@
 <!-- BEACON -->
 <script>(function(){try{var u="https:\/\/editmy.site\/api\/hit\/11";var d=JSON.stringify({p:location.pathname,r:document.referrer});if(navigator.sendBeacon){navigator.sendBeacon(u,d);}else{fetch(u,{method:"POST",keepalive:true,body:d});}}catch(e){}})();</script>
 <!-- /BEACON -->
+
+  <!-- Sender.net universal embed (renders Sender signup forms + fires automations) -->
+  <script>
+    (function (s, e, n, d, er) {
+      s['Sender'] = er;
+      s[er] = s[er] || function () {
+        (s[er].q = s[er].q || []).push(arguments)
+      }, s[er].l = 1 * new Date();
+      s[er].on = function(event, callback) {
+        s[er].listeners = s[er].listeners || {};
+        (s[er].listeners[event] = s[er].listeners[event] || []).push(callback);
+      };
+      var a = e.createElement(n),
+          m = e.getElementsByTagName(n)[0];
+      a.async = 1;
+      a.src = d;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
+    sender('59a781a3e14879')
+  </script>
 </head>
 <body>
 
@@ -175,19 +195,19 @@
             <p>Pop your details in below and I&rsquo;ll let you know the moment my first course is ready &mdash; along with any early-access offers for those on the list.</p>
 
             <!-- ============================================================
-                 NEWSLETTER / WAITLIST EMBED
-                 Paste your email-platform signup form embed code (e.g.
-                 MailerLite / Kit / Mailchimp) between the markers below.
-                 It will replace the placeholder block.
+                 WAITLIST EMBED  (Sender.net) - LIVE
+                 The Sender universal script is installed in this page's
+                 <head>; the form <div> below renders from it. This is the
+                 "Course Waitlist" form (id b68qqV); it should trigger a
+                 "notify when the course is ready" automation. Turn ON double
+                 opt-in for UK GDPR.
                  ============================================================ -->
             <!-- NEWSLETTER_EMBED:start -->
-            <div class="newsletter-embed-placeholder alert alert--info" style="text-align:left; margin-top: var(--space-lg);">
-              <p><strong>Newsletter signup form goes here.</strong> Paste your email-platform embed code between the <code>NEWSLETTER_EMBED</code> markers in this section. Until then, visitors can join via the button below.</p>
-            </div>
+            <div style="text-align: left" class="sender-form-field" data-sender-form-id="b68qqV"></div>
             <!-- NEWSLETTER_EMBED:end -->
 
             <div class="cta-banner__buttons" style="justify-content: center; margin-top: var(--space-lg);">
-              <a href="free-guide.html" class="btn btn--primary">Get the Free Guide &amp; Join the List</a>
+              <a href="free-guide.html" class="btn btn--secondary">Get the Free Guide &amp; Join the List</a>
             </div>
           </div>
         </div>
