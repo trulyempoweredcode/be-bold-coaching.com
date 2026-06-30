@@ -1,68 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.be-bold-coaching.com/</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.be-bold-coaching.com/about.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.be-bold-coaching.com/services.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.be-bold-coaching.com/courses.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.be-bold-coaching.com/free-guide.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.be-bold-coaching.com/faq.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.6</priority>
+    <lastmod>2026-06-30</lastmod>
   </url>
   <url>
     <loc>https://www.be-bold-coaching.com/blog.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.7</priority>
+    <lastmod>2026-06-30</lastmod>
   </url>
   <url>
     <loc>https://www.be-bold-coaching.com/contact.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-06-30</lastmod>
   </url>
   <url>
-    <loc>https://www.be-bold-coaching.com/blog/why-you-get-the-ick-with-friends.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <priority>0.5</priority>
+    <loc>https://www.be-bold-coaching.com/content-checklist.html</loc>
+    <lastmod>2026-06-30</lastmod>
   </url>
   <url>
-    <loc>https://www.be-bold-coaching.com/blog/when-you-strike-back.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.5</priority>
+    <loc>https://www.be-bold-coaching.com/courses.html</loc>
+    <lastmod>2026-06-30</lastmod>
   </url>
   <url>
-    <loc>https://www.be-bold-coaching.com/blog/the-child-behind-the-adult.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.5</priority>
+    <loc>https://www.be-bold-coaching.com/faq.html</loc>
+    <lastmod>2026-06-30</lastmod>
   </url>
   <url>
-    <loc>https://www.be-bold-coaching.com/blog/you-are-not-your-thoughts.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.5</priority>
+    <loc>https://www.be-bold-coaching.com/free-guide.html</loc>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/</loc>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/privacy.html</loc>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/services.html</loc>
+    <lastmod>2026-06-30</lastmod>
   </url>
   <url>
     <loc>https://www.be-bold-coaching.com/blog/i-cant-get-no-sleep.html</loc>
-    <lastmod>2026-06-09</lastmod>
-    <priority>0.5</priority>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/blog/the-child-behind-the-adult.html</loc>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/blog/when-you-strike-back.html</loc>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/blog/why-you-get-the-ick-with-friends.html</loc>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/blog/you-are-not-your-thoughts.html</loc>
+    <lastmod>2026-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.be-bold-coaching.com/blog/is-6-months-of-therapy-and-coaching-enough-to-see-real-change.html</loc>
+    <lastmod>2026-06-30</lastmod>
   </url>
 </urlset>
