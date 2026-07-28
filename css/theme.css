@@ -322,6 +322,17 @@ html, body { overflow-x: clip; }
 }
 
 
+/* Blog hero framing, per image.
+   .blog-post__hero is a fixed 16/9 letterbox with object-fit: cover, so a tall
+   portrait photo is cropped through its middle and the face is lost. Pin the
+   framing here rather than inline on the <img>: the Blog panel rebuilds that
+   tag from scratch on every save, so an inline style would be dropped the next
+   time the post is edited. */
+.blog-post__hero[src$="blog-am-i-wasting-my-life-ms4oywfy.jpg"] {
+  object-position: center 5%;
+}
+
+
 /* === BACKFILL: rules dropped by template update to v1.7.5 ===
    2 rule(s) preserved automatically because their classes are
    still referenced in this site's HTML. Move into proper site partials
