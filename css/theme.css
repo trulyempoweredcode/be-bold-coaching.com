@@ -322,13 +322,21 @@ html, body { overflow-x: clip; }
 }
 
 
-/* Blog hero framing, per image.
-   .blog-post__hero is a fixed 16/9 letterbox with object-fit: cover, so a tall
-   portrait photo is cropped through its middle and the face is lost. Pin the
-   framing here rather than inline on the <img>: the Blog panel rebuilds that
-   tag from scratch on every save, so an inline style would be dropped the next
-   time the post is edited. */
-.blog-post__hero[src$="blog-am-i-wasting-my-life-ms4oywfy.jpg"] {
+/* Blog index cards are 16/12 here, not the framework 16/9. A portrait subject
+   keeps far more of their height, and the landscape photos lose less width. */
+.blog-card__image {
+  aspect-ratio: 16 / 12;
+}
+
+/* Per-photo framing.
+   Both blog surfaces crop with object-fit: cover - .blog-post__hero on the post
+   page, .blog-card__image on the index - so a tall portrait is cut through its
+   middle and the face goes with it. Matching on the FILENAME covers every place
+   the photo is rendered, including any added later; matching on one class does
+   not, which is how the index card stayed wrong after the post page was fixed.
+   It lives here rather than inline on the <img> because the Blog panel rebuilds
+   that tag from scratch on every save and would drop an inline style. */
+img[src$="blog-am-i-wasting-my-life-ms4oywfy.jpg"] {
   object-position: center 5%;
 }
 
