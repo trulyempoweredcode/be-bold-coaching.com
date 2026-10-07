@@ -584,11 +584,27 @@
       cookieBanner.classList.add('cookie-banner--visible');
     }
 
+    /* Google Analytics loads only after the visitor accepts cookies. */
+    var loadAnalytics = function () {
+      if (window.__gaLoaded) { return; }
+      window.__gaLoaded = true;
+      var gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-3D8LKDWXVE';
+      document.head.appendChild(gaScript);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-3D8LKDWXVE');
+    };
+    if (consent === 'accepted') { loadAnalytics(); }
+
     var acceptBtn = cookieBanner.querySelector('.cookie-banner__accept');
     if (acceptBtn) {
       acceptBtn.addEventListener('click', function () {
         localStorage.setItem('cookie_consent', 'accepted');
         cookieBanner.classList.remove('cookie-banner--visible');
+        loadAnalytics();
       });
     }
 
