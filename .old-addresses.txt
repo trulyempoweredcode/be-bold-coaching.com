@@ -1,0 +1,28 @@
+# Every address this site has had. The weekly old-address guard (Ai-Editor scripts/address_guard.py)
+# checks each one still works and forwards it if not. Add lines freely; never remove one.
+# archive: pending
+/
+/about.html
+/blog.html
+/contact.html
+/courses.html
+/faq.html
+/free-guide.html
+/services.html
+/blog/am-i-wasting-my-life.html
+/blog/do-you-actually-hate-free-time-or-have-you-never-learned-how-to-use-it.html
+/blog/guide-what-is-high-functioning-anxiety.html
+/blog/how-to-stop-overthinking.html
+/blog/i-cant-get-no-sleep.html
+/blog/is-6-months-of-therapy-and-coaching-enough.html
+/blog/the-child-behind-the-adult.html
+/blog/the-useful-discomfort-of-feeling-stuck.html
+/blog/when-you-strike-back.html
+/blog/why-working-hard-isnt-the-same-as-being-seen.html
+/blog/why-you-get-the-ick-with-friends.html
+/blog/you-are-not-your-thoughts.html
+/about/
+/contact/
+/cookies-policy.html
+/faq/
+/privacy.html
